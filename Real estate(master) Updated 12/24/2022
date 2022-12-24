@@ -1,0 +1,33 @@
+@author: Prince Ugwubujor
+
+In this branch I added a method to output a clearer message if the house is available or not vailable.
+"""
+room_sizes=(100 , 200,)
+house_prices=100
+purchase_statuses=False
+
+#Create a class object with attributes room_size,house_price,purchase_status .
+
+class House:
+    def __init__(self,room_size,house_price,purchase_status):
+        self.room_size=room_size
+        self.house_price=house_price
+        self.purchese=purchase_status 
+        
+        
+    def availability_status(self):  
+        if purchase_statuses==True:
+            print('this house is no longer available')
+        else:
+            print('Morning Estate is still availabel for purchase .')
+    
+
+#create an instance of the class object
+
+Morning_estate=House(room_sizes,house_prices,purchase_statuses)
+
+#Access attributes of intsances of our class object
+
+print('The selling price of Morning estate is :', Morning_estate.house_price ,'Naira .')
+print('The room sizes of Morning estatate is :', room_sizes ,'ft .')
+print(Morning_estate.availability_status())
